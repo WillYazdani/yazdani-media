@@ -1,14 +1,3 @@
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
   .navbar {
     height: 5rem;
     padding: 0;
@@ -17,6 +6,7 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
+    background-color: rgb(103, 103, 103);
   }
 
   .navbar-container {
@@ -29,8 +19,12 @@ ul {
   
   .nav-items {
     display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
   }
-  
-  .nav-item {
-    padding-left: 0.5rem;
+
+  .nav-item:hover {
+    color: rgb(255, 255, 255);
   }
