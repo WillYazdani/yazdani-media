@@ -4,7 +4,7 @@ export default function Navbar(props) {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <div className="navbar-logo">
+                <div className="nav-logo">
                     <h1>Yazdani Media</h1>
                 </div>
                 <div className="navbar-nav">
