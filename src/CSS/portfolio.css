@@ -1,14 +1,54 @@
 .portfolio-container {
     margin: 0;
     padding: 0;
-    height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1rem;
+
 }
 
-img {
-    object-fit: contain;
-    max-width: 50rem;
-    height:30rem;
-    margin: 0.5rem;
+.image-container {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.image-container:nth-child(1) {
+    background-image: url(../assets/images/1.jpg);
+}
+
+.image-container:nth-child(2) {
+    background-image: url(../assets/images/2.jpg);
+}
+
+.image-container:nth-child(3) {
+    background-image: url(../assets/images/3.jpg);
+}
+
+.image-container:nth-child(4) {
+    background-image: url(../assets/images/4.jpg);
+}
+
+.image-container:nth-child(5) {
+    background-image: url(../assets/images/5.jpg);
+}
+
+.image-container:nth-child(6) {
+    background-image: url(../assets/images/6.jpg);
+}
+
+.image-container:nth-child(7) {
+    background-image: url(../assets/images/7.jpg);
+}
+
+.image-container:nth-child(8) {
+    background-image: url(../assets/images/8.jpg);
+}
+
+.image-container:nth-child(9) {
+    background-image: url(../assets/images/9.jpg);
 }
