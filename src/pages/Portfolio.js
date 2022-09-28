@@ -1,56 +1,74 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../CSS/portfolio.css";
-import { Link } from 'react-router-dom';
+import "../CSS/modal.css";
+import Modal from "../Modal";
+import {motion, AnimatePresence} from "framer-motion";
 
 export default function Portfolio() {
+    const [modalOpen, setModalOpen] = useState(false)
+    const close = () => setModalOpen(false)
+    const open = () => setModalOpen(true)
     return (
-        <div className="portfolio-container">
+        <>
+            <AnimatePresence
+                initial={false}
+                exitBeforeEnter={true}
+                onExitComplete={() => null}
+                >
+                {modalOpen && <Modal modalOpen={modalOpen} handleClose={close}></Modal>}
+            </AnimatePresence>
 
-            <div className="image-container">
-                <div className="image">
-                </div>
-            </div>
+            <div className="portfolio-container">
 
-            <div className="image-container">
-                <div className="image">
+                <div
+                className="image-container"
+                onClick={() => (modalOpen ? close() : open())}
+                >
                 </div>
-            </div>
 
-            <div className="image-container">
-                <div className="image">
+                <div className="image-container">
                 </div>
-            </div>
 
-            <div className="image-container">
-                <div className="image">
+                <div className="image-container">
                 </div>
-            </div>
 
-            <div className="image-container">
-                <div className="image">
+                <div className="image-container">
                 </div>
-            </div>
 
-            <div className="image-container">
-                <div className="image">
+                <div className="image-container">
                 </div>
-            </div>
 
-            <div className="image-container">
-                <div className="image">
+                <div className="image-container">
                 </div>
-            </div>
 
-            <div className="image-container">
-                <div className="image">
+                <div className="image-container">
                 </div>
-            </div>
 
-            <div className="image-container">
-                <div className="image">
+                <div className="image-container">
                 </div>
+
+                <div className="image-container">
+                </div>
+
+                <div className="image-container">
+                </div>
+
+                <div className="image-container">
+                </div>
+
+                <div className="image-container">
+                </div>
+
+                <div className="image-container">
+                </div>
+
+                <div className="image-container">
+                </div>
+
+                <div className="image-container">
+                </div>
+
             </div>
-            
-        </div>
+        </>
     )
 }
