@@ -1,5 +1,6 @@
 import {motion} from 'framer-motion';
 import slideOut from './slideOut';
+import "./assets/images/1.jpg";
 
 
 export default function Modal({handleClose}){
@@ -11,7 +12,8 @@ export default function Modal({handleClose}){
             exit={{x: "100vw"}}
             transition={{duration: 0.5}}
         >
-            <motion.button
+            <motion.div className="modal-content">
+                <motion.button
                 className="modal-close"
                 whileHover={{
                     scale: 1.05,
@@ -31,11 +33,16 @@ export default function Modal({handleClose}){
                 
                 onClick={handleClose}
                 variants={slideOut}
-            >
+                >
                 Close
-            </motion.button>
-            <motion.div className="modal-content">
-                <img></img>
+                </motion.button>
+
+                <img
+                src={require("./assets/images/1.jpg")}
+                alt="modal-img-1"
+                className="modal-img"
+                />
+                
             </motion.div>
         </motion.div>
         
