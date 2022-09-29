@@ -49,6 +49,11 @@
     transition: all 0.2s ease-in-out;
 }
 
+.page-link {
+    height: 100%;
+    width: 100%;
+}
+
 .image-container:nth-child(1) {
     grid-area: a;
     background-image: url(../assets/images/1.jpg);
