@@ -1,17 +1,18 @@
 .modal {
     background-color: rgba(255, 255, 255, 0.85);
-    position: fixed;
-    height: 100%;
+    position: absolute;
+    height: 100vh;
     width: 100%;
     z-index: 1;
     left: 0;
     top: 0;
-    transform: translateY(5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
 }
 
 .modal-content {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -20,4 +21,40 @@
 
 .modal-img {
     filter:drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.5));
+    padding:5rem;
+}
+
+.modal-close {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transform: translate(0, 70rem);
+}
+
+.modal-close:hover {
+    color: #ff0000;
+}
+
+.modal-nav-btn-left {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal-nav-btn-left:hover {
+    color: #ff0000;
+}
+
+.modal-nav-btn-right {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.modal-nav-btn-right:hover {
+    color: #ff0000;
 }

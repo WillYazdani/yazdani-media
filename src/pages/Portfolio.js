@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import "../CSS/portfolio.css";
 import "../CSS/modal.css";
-import Modal from "../Modal";
-import {motion, AnimatePresence} from "framer-motion";
+import Modal from "../components/Modal";
+import {AnimatePresence} from "framer-motion";
 
 export default function Portfolio() {
     const [modalOpen, setModalOpen] = useState(false)
