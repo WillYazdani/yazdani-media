@@ -10,16 +10,16 @@ export default function Navbar(props) {
                 <div className="navbar-nav">
                     <ul className="nav-items">
                         <li className="nav-item">
-                            <a href="/">Portfolio</a>
+                            <a href="/">Stills</a>
                         </li>
                         <li className="nav-item">
                             <a href="/about">About</a>
                         </li>
                         <li className="nav-item">
-                            <a href="/contact">Contact</a>
+                            <a href="/pricing">Pricing</a>
                         </li>
                         <li className="nav-item">
-                            <a href="/pricing">Pricing</a>
+                            <a href="/contact">Contact</a>
                         </li>
                     </ul>
                 </div>

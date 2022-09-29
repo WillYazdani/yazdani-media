@@ -8,11 +8,11 @@ export default function Page1() {
             <BsArrowLeftShort
             className="arrow-left"
             onClick={() => {
-                window.location.href = "/page9";
+                window.location.href = "/page5";
             }}/>
 
             <img
-            src={require('../assets/images/1.jpg')}
+            src={require('../assets/images/6.jpg')}
             alt="1"
             className="img"
             />
@@ -20,7 +20,7 @@ export default function Page1() {
             <BsArrowRightShort
             className="arrow-right"
             onClick={() => {
-                window.location.href = "/page2";
+                window.location.href = "/page7";
             }}/>
 
         </div>
