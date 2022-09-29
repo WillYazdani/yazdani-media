@@ -6,7 +6,7 @@ import {GoX} from 'react-icons/go';
 import "../assets/images/1.jpg";
 import "../CSS/modal.css";
 
-export default function Modal({handleClose}){
+export default function Modal2({handleClose}){
 
     document.body.style.overflow = "hidden";
 
@@ -55,7 +55,7 @@ export default function Modal({handleClose}){
 
                 {/* image */}
                 <img
-                src={require("../assets/images/1.jpg")}
+                src={require("../assets/images/2.jpg")}
                 alt="modal-img-1"
                 className="modal-img"
                 />
