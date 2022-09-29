@@ -1,16 +1,14 @@
 .portfolio-container {
-    margin: 0;
-    padding: 0;
-    height: 200vh;
-    width: 100%;
+    min-height: 200vh;
     display: grid;
     grid-template-areas:
-    'a a b c'
+    'a a b f'
     'h e e f'
-    'h g g f'
+    'h g g i'
+    'd d c i'
     ;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-gap: 1rem;
     --stagger-delay: 100ms;
 }
@@ -18,12 +16,10 @@
 @keyframes cardEnter {
     from {
       opacity: 0;
-      transform: scale(0.3);
       filter: hue-rotate(180deg);
     }
     to {
       opacity: 1;
-      transform: scale(1);
       filter: hue-rotate(0deg);
     }
   }
@@ -43,7 +39,6 @@
 
 .image-container:hover {
     opacity: 0.85;
-    transform: scale(0.98);
 
     /* HOVER ON */
     transition: all 0.2s ease-in-out;
