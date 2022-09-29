@@ -4,8 +4,13 @@
     height: 200vh;
     width: 100%;
     display: grid;
+    grid-template-areas:
+    'a a b c'
+    'h e e f'
+    'h g g f'
+    ;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-gap: 1rem;
     --stagger-delay: 100ms;
 }
@@ -45,76 +50,55 @@
 }
 
 .image-container:nth-child(1) {
+    grid-area: a;
     background-image: url(../assets/images/1.jpg);
     animation-delay: calc(1 * var(--stagger-delay));
 }
 
 .image-container:nth-child(2) {
+    grid-area: b;
     background-image: url(../assets/images/2.jpg);
     animation-delay: calc(2 * var(--stagger-delay));
 }
 
 .image-container:nth-child(3) {
+    grid-area: c;
     background-image: url(../assets/images/3.jpg);
     animation-delay: calc(3 * var(--stagger-delay));
 }
 
 .image-container:nth-child(4) {
+    grid-area: d;
     background-image: url(../assets/images/4.jpg);
     animation-delay: calc(4 * var(--stagger-delay));
 }
 
 .image-container:nth-child(5) {
+    grid-area: e;
     background-image: url(../assets/images/5.jpg);
     animation-delay: calc(5 * var(--stagger-delay));
 }
 
 .image-container:nth-child(6) {
+    grid-area: f;
     background-image: url(../assets/images/6.jpg);
     animation-delay: calc(6 * var(--stagger-delay));
 }
 
 .image-container:nth-child(7) {
+    grid-area: g;
     background-image: url(../assets/images/7.jpg);
     animation-delay: calc(7 * var(--stagger-delay));
 }
 
 .image-container:nth-child(8) {
+    grid-area: h;
     background-image: url(../assets/images/8.jpg);
     animation-delay: calc(8 * var(--stagger-delay));
 }
 
 .image-container:nth-child(9) {
+    grid-area: i;
     background-image: url(../assets/images/9.jpg);
     animation-delay: calc(9 * var(--stagger-delay));
-}
-
-.image-container:nth-child(10) {
-    background-image: url(../assets/images/9.jpg);
-    animation-delay: calc(10 * var(--stagger-delay));
-}
-
-.image-container:nth-child(11) {
-    background-image: url(../assets/images/9.jpg);
-    animation-delay: calc(11 * var(--stagger-delay));
-}
-
-.image-container:nth-child(12) {
-    background-image: url(../assets/images/9.jpg);
-    animation-delay: calc(12 * var(--stagger-delay));
-}
-
-.image-container:nth-child(13) {
-    background-image: url(../assets/images/9.jpg);
-    animation-delay: calc(13 * var(--stagger-delay));
-}
-
-.image-container:nth-child(14) {
-    background-image: url(../assets/images/9.jpg);
-    animation-delay: calc(14 * var(--stagger-delay));
-}
-
-.image-container:nth-child(15) {
-    background-image: url(../assets/images/9.jpg);
-    animation-delay: calc(15 * var(--stagger-delay));
 }
