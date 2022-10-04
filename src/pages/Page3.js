@@ -18,7 +18,7 @@ export default function Page1() {
             className="img"
             />
 
-            <Link to="/page3">
+            <Link to="/page4">
                 <BsArrowRightShort className="arrow-right"/>
             </Link>
 
