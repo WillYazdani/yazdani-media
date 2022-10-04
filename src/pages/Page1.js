@@ -2,6 +2,7 @@ import '../CSS/photos.css';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 export default function Page1() {
+    
     return (
         <div className="img-container">
 

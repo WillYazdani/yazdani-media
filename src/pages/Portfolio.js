@@ -2,6 +2,17 @@ import "../CSS/portfolio.css";
 
 export default function Portfolio() {
 
+    //handle click events
+    const handleClick = (e) => {
+        //get the id of the clicked element
+        const id = e.target.id;
+        //if the id is not null
+        if (id) {
+            //redirect to the page with the id
+            window.location.href = `/${id}`;
+        }
+    }
+
     return (
         <>
 
@@ -9,57 +20,48 @@ export default function Portfolio() {
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page1";
-                }}></div>
+                id="page1"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page2";
-                }}></div>
+                id="page2"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page3";
-                }}></div>
+                id="page3"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page4";
-                }}></div>
+                id="page4"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page5";
-                }}></div>
+                id="page5"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page6";
-                }}></div>
+                id="page6"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page7";
-                }}></div>
+                id="page7"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page8";
-                }}></div>
+                id="page8"
+                onClick={handleClick}></div>
 
                 <div
                 className="image-container"
-                onClick={() => {
-                    window.location.href = "/page9";
-                }}></div>
+                id="page9"
+                onClick={handleClick}></div>
 
             </div>
         </>
