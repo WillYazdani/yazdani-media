@@ -8,7 +8,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <AiOutlineMail className="email" />
-            <AiOutlinePhone className="phone" />
+            {/* <AiOutlinePhone className="phone" /> */}
             <AiOutlineInstagram className="instagram" />
         </footer>
     )

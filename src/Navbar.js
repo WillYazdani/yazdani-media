@@ -5,9 +5,9 @@ export default function Navbar(props) {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <div className="nav-logo">
+                <Link to="/" className="nav-logo">
                     <h1>Yazdani Media</h1>
-                </div>
+                </Link>
                 <div className="navbar-nav">
                     <ul className="nav-items">
                         <li className="nav-item">

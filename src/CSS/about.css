@@ -18,3 +18,18 @@
 .about-title {
     margin:0;
 }
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .me {
+        width: 100%;
+    }
+
+    .about-info {
+        width: 100%;
+        padding-left: 0;
+    }
+}

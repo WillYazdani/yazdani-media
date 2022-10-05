@@ -30,6 +30,7 @@
 
   .nav-logo h1 {
     margin: 0;
+    padding: 0;
   }
 
   .nav-logo {
@@ -42,4 +43,14 @@
   .nav-logo:hover {
     color: red;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      height: 5rem;
+      background-color: rgb(255, 255, 255);
+    }
+    .nav-items {
+      gap: 0.5rem;
+    }
   }
