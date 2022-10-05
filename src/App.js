@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar"
+import Footer from "./Footer"
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -38,6 +39,7 @@ export default function App() {
                         <Route path="/page9" element={<Page9 />} />
                     </Routes>
                 </div>
+                <Footer />
             </div>
         </>
         
