@@ -1,14 +1,14 @@
 import React from 'react';
 import "./CSS/footer.css";
-import { GoMail } from "react-icons/go";
-import { FaPhoneAlt } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlinePhone} from "react-icons/ai";
 import {AiOutlineInstagram} from "react-icons/ai";
 
 export default function Footer() {
     return (
         <footer className="footer">
-            <GoMail className="email" />
-            <FaPhoneAlt className="phone" />
+            <AiOutlineMail className="email" />
+            <AiOutlinePhone className="phone" />
             <AiOutlineInstagram className="instagram" />
         </footer>
     )
