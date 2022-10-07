@@ -10,12 +10,12 @@ footer {
     align-items: center;
 }
 
-.email, .phone, .instagram {
+.email, .phone, .instagram, .linkedin {
     margin: 2rem;
     font-size: 2rem;
 }
 
-.email:hover, .phone:hover, .instagram:hover {
+.email:hover, .phone:hover, .instagram:hover, .linkedin:hover {
     color: red;
     cursor: pointer;
 }
