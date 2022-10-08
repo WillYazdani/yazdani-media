@@ -6,7 +6,7 @@ export default function Navbar(props) {
         <nav className="navbar">
             <div className="navbar-container">
                 <Link to="/" className="nav-logo">
-                    <h1>Yazdani Media</h1>
+                    <img src={require("./assets/images/ym-flat.png")} alt="logo" />
                 </Link>
                 <div className="navbar-nav">
                     <ul className="nav-items">
