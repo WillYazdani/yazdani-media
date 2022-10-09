@@ -17,20 +17,54 @@ export default function Portfolio() {
 
     return (
         <>
+            <div className="gallery-container">
+                <div className="col-1">
 
-            {images.map((image, index) => (
-                
-                <img
-                className="gallery-image"
-                key={index}
-                src={image}
-                alt=""
-                style= {{
-                    width: "100%",
-                }}
-                 />
-                
-            ))}
+                    {images.map((image, index) => (
+                        
+                        <img
+                        className="gallery-image"
+                        key={index}
+                        src={image}
+                        alt=""
+                        />
+                    
+                    ))}
+
+                </div>
+
+                <div className="col-2">
+
+                    {images.map((image, index) => (
+                        
+                        <img
+                        className="gallery-image"
+                        key={index}
+                        src={image}
+                        alt=""
+                        />
+                        
+                    ))}
+
+                </div>
+
+                <div className="col-3">
+
+                    {images.map((image, index) => (
+                        
+                        <img
+                        className="gallery-image"
+                        key={index}
+                        src={image}
+                        alt=""
+                        />
+                        
+                    ))}
+
+                </div>
+
+            </div>
+            
 
 
         </>
