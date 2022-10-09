@@ -1,5 +1,4 @@
 import "../CSS/portfolio.css";
-// import {Link} from "react-router-dom";
 
 const images = [
     require('../assets/images/1.jpg'),
