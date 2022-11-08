@@ -2,6 +2,7 @@
     display: flex;
     animation: cardEnter 0.5s ease-in-out;
     padding: 1rem;
+
 }
 
 .me {
@@ -23,6 +24,7 @@
 @media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column;
+        padding-bottom: 5rem;
     }
 
     .me {
