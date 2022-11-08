@@ -81,6 +81,10 @@
       position: absolute;
     }
 
+    .nav-logo img {
+      width: 12rem;
+    }
+
     .navbar-nav {
       display: none;
       width: 100%;
