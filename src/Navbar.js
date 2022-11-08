@@ -1,7 +1,17 @@
 import "./CSS/navbar.css";
 import { Link } from "react-router-dom";
+import React from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export default function Navbar(props) {
+    
+    //toggle navbar-nav to active when menu-icon is clicked
+    const toggleNav = () => {
+        const nav = document.querySelector(".navbar-nav");
+        nav.classList.toggle("active");
+    };
+
+
     return (
         <nav className="navbar">
             <div className="navbar-container">
@@ -16,10 +26,14 @@ export default function Navbar(props) {
                         <li className="nav-item">
                             <Link to="/about">About</Link>
                         </li>
-                        {/* <li className="nav-item">
+                        <li className="nav-item">
                             <Link to="/pricing">Pricing</Link>
-                        </li> */}
+                        </li>
                     </ul>
+                </div>
+                <div className="navbar-toggle">
+                    <AiOutlineMenu className="menu-icon"
+                    onClick={toggleNav} />
                 </div>
             </div>
         </nav>

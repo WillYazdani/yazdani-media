@@ -1,6 +1,7 @@
 .about-container {
     display: flex;
     animation: cardEnter 0.5s ease-in-out;
+    padding: 1rem;
 }
 
 .me {

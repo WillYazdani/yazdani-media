@@ -1,0 +1,31 @@
+.pricing-container {
+    display: flex;
+    padding-bottom: 5rem;
+}
+
+.pricing-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    width: 33.33%;
+    margin: 0.5rem;
+}
+
+.card-img {
+    object-fit: contain;
+    width: 100%;
+}
+
+/* media query for screens under 600px */
+@media screen and (max-width: 600px) {
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing-card {
+        width: 100%;
+    }
+}
