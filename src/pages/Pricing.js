@@ -13,7 +13,7 @@ export default function Pricing() {
                 <h2 className='pricing-card-title'>
                     Videography
                 </h2>
-                <h3>$250</h3>
+                <h3>Starting at $250</h3>
                 <p>
                     HD Video with professional editing for your business or residential property
                 </p>
@@ -27,7 +27,7 @@ export default function Pricing() {
                 <h2 className='pricing-card-title'>
                     Business / Real Estate Photos
                 </h2>
-                <h3>$150</h3>
+                <h3>Starting at $250</h3>
                 <p>
                     High quality photos for your business or residential property.
                 </p>
@@ -41,9 +41,10 @@ export default function Pricing() {
                 <h2 className='pricing-card-title'>
                     Business Headshots
                 </h2>
-                <h3>$150</h3>
+                <h3>Starting at $150 for 5 Photos</h3>
                 <p>
-                    Professional headshots for your Linkedin, website and business cards.
+                    Professional headshots for your Linkedin, website and business cards.<br/>
+                    *Prices vary for multiple customers
                 </p>
             </div>
         </div>

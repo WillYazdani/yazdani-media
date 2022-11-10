@@ -27,7 +27,7 @@ export default function Navbar(props) {
                             <Link to="/about">About</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/pricing">Pricing</Link>
+                            <Link to="/pricing">Services</Link>
                         </li>
                     </ul>
                 </div>
