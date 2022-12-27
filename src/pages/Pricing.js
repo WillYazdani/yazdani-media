@@ -44,7 +44,7 @@ export default function Pricing() {
                 <h3>Starting at $150 for 5 Photos</h3>
                 <p>
                     Professional headshots for your Linkedin, website and business cards.<br/>
-                    *Prices vary for multiple customers
+                    *Prices vary for multiple customers / Team shoots
                 </p>
             </div>
         </div>
