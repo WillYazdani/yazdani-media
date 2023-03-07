@@ -2,6 +2,8 @@
     display:none;
 }
 
+/* gallery */
+
 .gallery-container {
     display: flex;
     padding-bottom: 5rem;
@@ -21,6 +23,8 @@
     align-self: center;
     cursor: pointer;
 }
+
+/* modal */
 
 .overlay {
     position: fixed;

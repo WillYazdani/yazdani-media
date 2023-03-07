@@ -68,6 +68,7 @@ export default function Portfolio() {
                         className="gallery-image"
                         key={index}
                         src={image}
+                        loading="lazy"
                         onClick={() => handleClick(image, index)}
                         alt=""
                         />
@@ -84,6 +85,7 @@ export default function Portfolio() {
                         className="gallery-image"
                         key={index}
                         src={image}
+                        loading="lazy"
                         onClick={() => handleClick(image, index)}
                         alt=""
                         />
@@ -100,6 +102,7 @@ export default function Portfolio() {
                         className="gallery-image"
                         key={index}
                         src={image}
+                        loading="lazy"
                         onClick={() => handleClick(image, index)}
                         alt=""
                         />
