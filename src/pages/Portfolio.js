@@ -3,6 +3,8 @@ import "../CSS/portfolio.css";
 import {AiOutlineRightCircle} from "react-icons/ai";
 import {AiOutlineLeftCircle} from "react-icons/ai";
 import {AiOutlineCloseCircle} from "react-icons/ai";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const images = [
     require('../assets/images/1.jpg'),
@@ -64,13 +66,12 @@ export default function Portfolio() {
 
                     {images.map((image, index) => (
                         
-                        <img
+                        <LazyLoadImage
                         className="gallery-image"
                         key={index}
                         src={image}
-                        loading="lazy"
                         onClick={() => handleClick(image, index)}
-                        alt=""
+                        alt={image.alt}
                         />
                         
                     ))}
@@ -81,13 +82,12 @@ export default function Portfolio() {
 
                     {images.map((image, index) => (
                         
-                        <img
+                        <LazyLoadImage
                         className="gallery-image"
                         key={index}
                         src={image}
-                        loading="lazy"
                         onClick={() => handleClick(image, index)}
-                        alt=""
+                        alt={image.alt}
                         />
                         
                     ))}
@@ -98,13 +98,12 @@ export default function Portfolio() {
 
                     {images.map((image, index) => (
                         
-                        <img
+                        <LazyLoadImage
                         className="gallery-image"
                         key={index}
                         src={image}
-                        loading="lazy"
                         onClick={() => handleClick(image, index)}
-                        alt=""
+                        alt={image.alt}
                         />
                 
                     ))}
